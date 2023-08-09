@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Martin Hristov's web store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="./styles/style.css" rel="stylesheet" />
+    <script src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="filter">
+      <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="true" aria-controls="mobile-filter">Filters <span class="fa fa-filter pl-1"></span>
+      </button>
+    </div>
+    <div id="mobile-filter">
+      <p class="pl-sm-0 pl-2"> Home | <b>All products</b>
+      </p>
+      <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+      </div>
+      <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Categories</h6>
+        <div id="orange">
+          <span class="fa fa-minus"></span>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="checkbox" id="artisan">
+            <label for="artisan">Tools</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="breakfast">
+            <label for="breakfast">Home appliances</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="healthy">
+            <label for="healthy">DIY</label>
+          </div>
+        </form>
+      </div>
+      <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Color</h6>
+        <div id="orange">
+          <span class="fa fa-minus"></span>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="checkbox" id="tea">
+            <label for="tea">Red</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="cookies">
+            <label for="cookies">Blue</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="pastries">
+            <label for="pastries">Green</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="dough">
+            <label for="dough">Yellow</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="choco">
+            <label for="choco">Orange</label>
+          </div>
+        </form>
+      </div>
+      <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Discounts</h6>
+        <div id="orange">
+          <span class="fa fa-minus"></span>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="checkbox" id="25off">
+            <label for="25">25% off</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="5off">
+            <label for="5off" id="off">5% off on power tools</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <section id="sidebar">
+      <p> Home | <b>All products</b>
+      </p>
+      <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+      </div>
+      <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Categories</h6>
+        <div id="orange">
+          <span class="fa fa-minus"></span>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="checkbox" id="artisan">
+            <label for="artisan">Tools</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="breakfast">
+            <label for="breakfast">Home appliances</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="healthy">
+            <label for="healthy">DIY</label>
+          </div>
+        </form>
+      </div>
+      <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Color</h6>
+        <div id="orange">
+          <span class="fa fa-minus"></span>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="checkbox" id="tea">
+            <label for="tea">Red</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="cookies">
+            <label for="cookies">Blue</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="pastries">
+            <label for="pastries">Green</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="dough">
+            <label for="dough">Yellow</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="choco">
+            <label for="choco">Orange</label>
+          </div>
+        </form>
+      </div>
+      <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Discounts</h6>
+        <div id="orange">
+          <span class="fa fa-minus"></span>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="checkbox" id="25off">
+            <label for="25">25% off</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="5off">
+            <label for="5off" id="off">5% off on power tools</label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- products section -->
+    <section id="products">
+      <div class="container">
+        <div class="d-flex flex-row">
+          <!-- <div class="text-muted m-2" id="res">Showing 44 results</div> -->
+          <div class="ml-auto mr-lg-4">
+            <div id="sorting" class="border rounded p-1 m-1">
+              <span class="text-muted">Sort by</span>
+              <select name="sort" id="sort">
+                <option value="A-Z">
+                  <b>A-Z</b>
+                </option>
+                <option value="Z-A">
+                  <b>Z-A</b>
+                </option>
+                <option value="prcie ascending">
+                  <b>Price ascending</b>
+                </option>
+                <option value="price descending">
+                  <b>Price descending</b>
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+            <div id="card-container"></div>
+            <div class="card-actions">
+              <div class="card">
+                <img class="card-img-top" src="./img/01.jpg">
+                <div class="card-body">
+                  <h5>
+                    <b>LED bulbs</b>
+                  </h5>
+                  <div class="stars" id="star1">
+                    <form action="">
+                      <input class="star star-5" id="star-5" type="radio" name="star" />
+                      <label class="star star-5" for="star-5"></label>
+                      <input class="star star-4" id="star-4" type="radio" name="star" />
+                      <label class="star star-4" for="star-4"></label>
+                      <input class="star star-3" id="star-3" type="radio" name="star" />
+                      <label class="star star-3" for="star-3"></label>
+                      <input class="star star-2" id="star-2" type="radio" name="star" />
+                      <label class="star star-2" for="star-2"></label>
+                      <input class="star star-1" id="star-1" type="radio" name="star" />
+                      <label class="star star-1" for="star-1"></label>
+                    </form>
+                  </div>
+                  <div class="d-flex flex-row my-2">
+                    <div class="text-muted">$1/piece</div>
+                    <div class="ml-auto">
+                      <button class="border rounded bg-white sign">
+                        <span class="fa fa-plus" id="orange"></span>
+                      </button>
+                      <span class="px-sm-1">1 pcs</span>
+                      <button class="border rounded bg-white sign">
+                        <span class="fa fa-minus" id="orange"></span>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn w-100 rounded my-2">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+            <div class="card">
+              <img class="card-img-top" src="./img/02.jpg">
+              <div class="card-body">
+                <h5>
+                  <b>Ruller</b>
+                </h5>
+                <div class="stars">
+                  <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star" />
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star" />
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star" />
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star" />
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star" />
+                    <label class="star star-1" for="star-1"></label>
+                  </form>
+                </div>
+                <div class="d-flex flex-row my-2">
+                  <div class="text-muted">$3/piece</div>
+                  <div class="ml-auto">
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-plus" id="orange"></span>
+                    </button>
+                    <span class="px-sm-1">1 pcs</span>
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-minus" id="orange"></span>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn w-100 rounded my-2">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+            <div class="card">
+              <img class="card-img-top" src="./img/03.jpg">
+              <div class="card-body">
+                <h5>
+                  <b>Fan</b>
+                </h5>
+                <div class="stars">
+                  <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star" />
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star" />
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star" />
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star" />
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star" />
+                    <label class="star star-1" for="star-1"></label>
+                  </form>
+                </div>
+                <div class="d-flex flex-row my-2">
+                  <div class="text-muted">$12/piece</div>
+                  <div class="ml-auto">
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-plus" id="orange"></span>
+                    </button>
+                    <span class="px-sm-1">1 pcs</span>
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-minus" id="orange"></span>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn w-100 rounded my-2">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+            <div class="card">
+              <img class="card-img-top" src="./img/05.jpg">
+              <div class="card-body">
+                <h5>
+                  <b>Victorinox</b>
+                </h5>
+                <div class="stars">
+                  <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star" />
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star" />
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star" />
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star" />
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star" />
+                    <label class="star star-1" for="star-1"></label>
+                  </form>
+                </div>
+                <div class="d-flex flex-row my-2">
+                  <div class="text-muted">$30/piece</div>
+                  <div class="ml-auto">
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-plus" id="orange"></span>
+                    </button>
+                    <span class="px-sm-1">1 pcs</span>
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-minus" id="orange"></span>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn w-100 rounded my-2">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+            <div class="card">
+              <img class="card-img-top" src="./img/08.jpg">
+              <div class="card-body">
+                <h5>
+                  <b>Stapler</b>
+                </h5>
+                <div class="stars">
+                  <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star" />
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star" />
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star" />
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star" />
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star" />
+                    <label class="star star-1" for="star-1"></label>
+                  </form>
+                </div>
+                <div class="d-flex flex-row my-2">
+                  <div class="text-muted">$5/piece</div>
+                  <div class="ml-auto">
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-plus" id="orange"></span>
+                    </button>
+                    <span class="px-sm-1">1 pcs</span>
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-minus" id="orange"></span>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn w-100 rounded my-2">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+            <div class="card d-relative">
+              <img class="card-img-top" src="./img/09.jpg">
+              <div class="card-body">
+                <h5>
+                  <b>Hammer</b>
+                </h5>
+                <div class="stars">
+                  <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star" />
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star" />
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star" />
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star" />
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star" />
+                    <label class="star star-1" for="star-1"></label>
+                  </form>
+                </div>
+                <div class="rounded bg-white discount" id="orange">10% off</div>
+                <div class="d-flex flex-row my-2">
+                  <div class="text-muted price">
+                    <del>$5</del>$4/piece
+                  </div>
+                  <div class="ml-auto">
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-plus" id="orange"></span>
+                    </button>
+                    <span>1pc</span>
+                    <button class="border rounded bg-white sign">
+                      <span class="fa fa-minus" id="orange"></span>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn w-100 rounded my-2">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid text-center"></div>
+    <div class="load">
+      <button class="btn w-100 rounded my-2" id="load-more">Load more</button>
+      <span>Showing 6 <span id="card-count"></span> of <span id="card-total"></span> 99 products </span>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Connect</h3>
+            <a href="#" class="fa fa-facebook" id="facebook"></a>
+            <a href="#" class="fa fa-twitter" id="twitter"></a>
+            <a href="#" class="fa fa-google" id="google"></a>
+            <a href="https://www.linkedin.com/in/martin-xristoff" class="fa fa-linkedin" id="linkedin"></a>
+            <a href="#" class="fa fa-youtube" id="youtube"></a>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h4 class="text-uppercase">More info:</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">FAQ's</a>
+              </li>
+              <li>
+                <a href="#!">About us</a>
+              </li>
+              <li>
+                <a href="#!">Partners</a>
+              </li>
+              <li>
+                <a href="#!">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h4 class="text-uppercase">Links</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="https://hristovmd.github.io/"> 2023 Copyright: Martin Xristoff</a>
+    </div>
+    </footer>
+  </body>
+</html>
+</body>
+</html>
